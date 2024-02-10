@@ -6,8 +6,10 @@ import { useDrawingArea } from "@mui/x-charts/hooks";
 import * as React from "react";
 
 const data = [
-  { value: 10, label: "B" },
-  { value: 20, label: "D" },
+  { value: 56, label: "Super Healthy", color: "green" },
+  { value: 35, label: "Healthy", color: "#90EE90" },
+  { value: 6, label: "Danger", color: "red" },
+  { value: 27, label: "Warning", color: "orange" },
 ];
 
 const size = {
@@ -24,10 +26,15 @@ const StyledText = styled("text")(({ theme }) => ({
 
 function PieCenterLabel({ children }) {
   const { width, height, left, top } = useDrawingArea();
-  console.log(" width, height, left, top", width, height, left, top);
   return (
-    <StyledText x={left + width / 2} y={top + height / 2}>
-      {children}
+    <StyledText x={left + width / 2} y={top + height / 2 - 10}>
+      {" "}
+      <tspan x={left + width / 2} dy="0.2em">
+        124
+      </tspan>{" "}
+      <tspan x={left + width / 2} dy="1.2em">
+        Cameras
+      </tspan>{" "}
     </StyledText>
   );
 }
@@ -42,22 +49,14 @@ export default function SimplePieChart() {
       }}
     >
       <PieCenterLabel>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <Box
-            component="span"
-            sx={{
-              color: "#000",
-              fontSize: 16,
-              fontStyle: "normal",
-              fontWeight: 700,
-              lineHeight: "normal",
-              letterSpacing: "0.5px",
-            }}
-          >
-            124
-          </Box>
-        </Box>
-        Cameras
+        <Typography
+          sx={{
+            fontWeight: "bold",
+          }}
+        >
+          124
+        </Typography>
+        <Typography>Cameras</Typography>
       </PieCenterLabel>
     </PieChart>
   );
