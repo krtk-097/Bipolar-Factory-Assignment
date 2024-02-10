@@ -1,7 +1,7 @@
 "use client";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import React from "react";
-import StyledButton from "./styledButton";
+import StyledButton from "./StyledButton";
 function Header() {
   return (
     <Box sx={{ display: "flex", justifyContent: "space-between", pb: "36px" }}>

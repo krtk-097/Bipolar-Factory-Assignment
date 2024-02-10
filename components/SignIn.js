@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import BoldText2 from "./BoldText2";
+import BoldText2 from "./BoldText_2";
 
 function SignIn() {
   return (

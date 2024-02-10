@@ -12,7 +12,7 @@ import BoldText1 from "./BoldText_1";
 import BoldText2 from "./BoldText_2";
 import FadeText from "./FadeText";
 import RecordCard from "./RecordCard";
-import StyledButton1 from "./styledButton1";
+import StyledButton1 from "./StyledButton_1";
 
 function HeroBanner() {
   return (

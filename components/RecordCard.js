@@ -3,7 +3,7 @@ import { Box, Stack } from "@mui/material";
 import React from "react";
 import playButton from "../public/playButton.svg";
 import record from "../public/record1.png";
-import BoldText1 from "./BoldText1";
+import BoldText1 from "./BoldText_1";
 import FadeText from "./FadeText";
 
 function RecordCard({ boldContent, fadeContent }) {
