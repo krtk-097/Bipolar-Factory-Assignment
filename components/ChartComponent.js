@@ -5,7 +5,7 @@ import React from "react";
 
 import BoldText1 from "./BoldText_1";
 import BoldText2 from "./BoldText_2";
-import SimplePieChart from "./SImplePieChart";
+import SimplePieChart from "./SimplePieChart";
 
 function CameraHealthChart() {
   return (
