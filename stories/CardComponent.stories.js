@@ -2,8 +2,14 @@ import React from "react";
 import CardComponent from "../components/CardComponent";
 
 export default {
-  component: CardComponent,
   title: "Components/Cards",
+  component: CardComponent,
+  argTypes: {
+    cardData: {
+      control: "object",
+      description: "Data object for the card component",
+    },
+  },
   args: {
     cardData: {
       id: 1,
